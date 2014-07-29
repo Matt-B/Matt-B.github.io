@@ -1,0 +1,15 @@
+html {
+  background-image: url(/assets/background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  padding-top: 50px;
+  background-color: transparent;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
