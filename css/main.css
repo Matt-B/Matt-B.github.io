@@ -1,17 +1,13 @@
-html {
-  background-image: url(/assets/background.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 body {
   padding-top: 50px;
-  background-color: transparent;
+  padding-bottom: 20px;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+.jumbotron {
+  background-image: url(/assets/background.jpg);
+  background-size: cover;
+}
+
+.jumbotron h1.pagetitle {
+  color: white;
 }
