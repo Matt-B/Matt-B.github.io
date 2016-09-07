@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/mattbailey
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://matt-bailey.co.uk
+  * I am mattbailey (https://keybase.io/mattbailey) on keybase.
+  * I have a public key with fingerprint 9020 3DA3 5059 5EDE EE7C  69B4 2182 6AA5 EC6E BEE9
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012004cfa02337615488ad152eb2931ab0132e969c2c7aab1eda35a5e63acfd7f0730a",
+            "fingerprint": "90203da350595edeee7c69b421826aa5ec6ebee9",
+            "host": "keybase.io",
+            "key_id": "21826aa5ec6ebee9",
+            "kid": "010159721863b1a99b88ae9179b6c5a178beea69c45da9f52c25432425b00b5d626e0a",
+            "uid": "39815436eaa829d18dee0f007a299919",
+            "username": "mattbailey"
+        },
+        "service": {
+            "hostname": "matt-bailey.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1473240138,
+    "expire_in": 157680000,
+    "prev": "c00e9d22310f79b50eaa49408bf27efb57652cd1315bf5b075220e9e7e0991ec",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMNyAnicbVJtUFRVAF2QhWlRISDAgEEemUnszn3v7XtvHyhMQTFLTUnRB2Ct9713
+Hz7A3W0/+JAg0aCAUBytADUC3AgESg0pxA/UpWGYAoE+FaZ0GIagRmPSGi26SznT
+j+6fO/fec84959x7cdUKlcYrZleea8F8Zs5rZPA9p+qF0SvppYRgkUqIhFIiHy1P
+qEBCdocpX5GIBAKQFAB6UYaAommOJRm9wQAlkqGQQPE0CQVA0hTiWV6kRA5CgUQS
+pBnIIJaGoixxMuBoAIl4QlbMuchmtSlmB5blAQVoDxIwPIMkhBAnsrygp0gDxUJM
+F1kkIMRj4jaL3cPA5gRoRzrFgvfwwrRs73/wd30DkuE5fM7SAgl5XsC+EU9yvMCK
+DCQ5A4ZDbFvPSJCXGUqkGD1N6SlGAEBgJJZi0bJv57IczRtwdJpFEBooXiIN2DKQ
+AeAgxfM86bnXaUc2M9yOMHo7dDgEqBTgPsviCbxfqIjIU60ny38w2n9AOtGic+Zj
+CavN4rCIlgJ8vM3hsCZ42I4SqwdehATTv0ImQTFLuE1MKEQ2u2IxEwkkRooOxaNM
+6jmcAz+LIZ5AxVbFhkyKB8FwrAHg4bkGFWJJEQDESxRFk0DGtTAAh9PzemAQZIpD
+soAJuBaJpElGkHEtHENRmIE4BHBkJBKeaK+YLVibwj5hLta0K7lm6HDaEFF2fnCL
+j8pLo/JVe3u+mUpzT+DdzxddHLBkrE92RhvlVO19l1Jf/fXBoFUZVaNZrevzKgPI
+grKJpwa6Ji4nzpfnTHpvmDcax5inv3GNHdtw9LN17zLW4pK5qs5r+WcD1D3aj/e6
+rUniYKn2uqYpLCKTa0r6Utd68ud09G15+Pimg8GJIcl7P8nxO/DnQEvHiWsVMWHH
+Z4cvobChxtH8yLXt50JaYuL+ioju7kG1N/jA0MDLvjP1RaoG38fLYpfujL+29Y+p
+bGOzO6rPHMLLZFX9brR6/mBH8c7np9CnB3qfPZRxWO69Qqga01xZQW3rrlZsvF61
+p1C5o5VTKo/WkYu/ja3oVHQjpj1ttriFmobMvrLV/a/vupnWHEsN+s10Thyqe8ji
+Dv1658tLwScbhksrfnpx07GhNn91XFdL2pvzQdP96sGF2xUlO1rfT6q/mXY184dh
+U4+16ft9N1ZW5r198cjYO/5dt96aey5PwwQrjQ97H9lc/3v1qdPJsT8amZRul/tW
+pKYarn8s6ovp3SOGyJ5z7TXzj7b0Ts59VBt1obsmtWZN4gOBsx0+J4a40yWxvvv6
+/E6ZUj4HI155T7qbB7q+C1/MPvvBhfDaUDY7uE6bYMrYms526qZuD0eM9u84E/pE
+79qi/RGHNbMvuWbi7p1sVDdH7+c2P9Ibr86aVlznq2Ny2933L67JntwY7lP+Yc64
++40tK51kx/FfVDNf+cvP/A18DL4+
+=JGZP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mattbailey
+
+==================================================================
+
