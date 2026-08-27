@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matt Bailey - Page not found</title>
+<link rel="shortcut icon" type="image/png" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+<script>
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem('mb-theme'); } catch (e) {}
+    var dark = stored ? stored === 'dark' : !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var root = document.documentElement;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    root.style.colorScheme = dark ? 'dark' : 'light';
+  })();
+</script>
+</head>
+<body>
+<div class="page">
+  <header class="site-header">
+    <a href="/" class="wordmark">Matt Bailey</a>
+  </header>
+  <section class="hero">
+    <div class="terminal">
+      <div class="terminal-titlebar">
+        <div class="terminal-lights">
+          <span class="terminal-light terminal-light--red"></span>
+          <span class="terminal-light terminal-light--amber"></span>
+          <span class="terminal-light terminal-light--green"></span>
+        </div>
+        <span class="terminal-title">matt@matt-bailey — ~/404</span>
+        <span></span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-prompt">
+          <span class="terminal-prompt-arrow">➜</span><span>~ find . -name page</span>
+        </div>
+        <h1 style="font-size:clamp(40px,8vw,90px);">404</h1>
+        <p class="hero-tagline" style="min-height:0;">This page doesn't exist. Try going back to the <a href="/">home page</a>.</p>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
