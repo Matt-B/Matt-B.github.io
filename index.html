@@ -1,30 +1,372 @@
----
-layout: default
-title: Hello!
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matt Bailey</title>
+<meta name="description" content="Matt Bailey — software tester who's just as comfortable writing code as testing it.">
+<link rel="shortcut icon" type="image/png" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+<script>
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem('mb-theme'); } catch (e) {}
+    var dark = stored ? stored === 'dark' : !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var root = document.documentElement;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    root.style.colorScheme = dark ? 'dark' : 'light';
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HD3KF0M48"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5HD3KF0M48');
+</script>
+</head>
+<body>
+<div class="page">
 
-<div class="container">
-  <p>My name is Matt. I'm a tester.<p>
-  <p>Hopefully soon there will be something of worth here, but for the moment why not see what I am doing on <a href="https://mas.to/@mattbailey">Mastodon</a>, <a href="https://medium.com/@matt-bailey">Medium</a>, <a href="http://github.com/Matt-B">Github</a>, or have a look at <a href="/cv.html">my CV</a>.</p>
+  <header class="site-header">
+    <a href="#top" class="wordmark">Matt Bailey</a>
+    <nav class="site-nav">
+      <a href="#writing">Writing</a>
+      <a href="#cv">CV</a>
+      <button type="button" class="pill" data-theme-toggle aria-label="Toggle dark mode">
+        <span class="pill-dot"></span><span data-theme-label>Dark</span>
+      </button>
+    </nav>
+  </header>
 
+  <section id="top" class="hero">
+    <div class="terminal">
+      <div class="terminal-titlebar">
+        <div class="terminal-lights">
+          <span class="terminal-light terminal-light--red"></span>
+          <span class="terminal-light terminal-light--amber"></span>
+          <span class="terminal-light terminal-light--green"></span>
+        </div>
+        <span class="terminal-title">matt@matt-bailey — ~/hello</span>
+        <span></span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-prompt">
+          <span class="terminal-prompt-arrow">➜</span><span>~ whoami</span>
+        </div>
+        <h1>hello!</h1>
+        <p class="hero-tagline">My name is Matt. I'm a <span class="hero-role"><span data-role>tester</span><span class="hero-caret"></span></span>.</p>
+      </div>
+    </div>
+  </section>
 
-  <h3>Blogposts</h3>
-  <ul>
-    <li><a href="https://medium.com/lydtech-consulting/size-matters-4a37fa73c93c">Size Matters</a> - The importance of sizing throughout the development lifecycle, a blog post for Lydtech Consulting.</li>
-    <li><a href="https://medium.com/lydtech-consulting/the-case-for-automated-testing-cd0aa91e1219">The Case for Automated Testing</a> - Reflecting on key advantages and common pitfalls of automated testing, a blog post for Lydtech Consulting.</li>
-    <li><a href="https://medium.com/lydtech-consulting/preemptive-parallelism-1738493eb231">Preemptive Parallelism</a> - Why you should bake parallelism into your E2E tests, a blog post for Lydtech Consulting.</li>
-    <li><a href="https://medium.com/lydtech-consulting/balancing-the-test-automation-pyramid-30cf9c8d8a3c">Balancing the Test Automation Pyramid</a> - Pragmatism and pyramids, a blog post for Lydtech Consulting.</li>
-  </ul>
+  <section id="writing">
+    <div class="section-heading">
+      <h2>writing</h2>
+      <span class="section-meta">4 posts</span>
+    </div>
+    <div class="card-list">
+      <a class="post-card" href="https://medium.com/lydtech-consulting/size-matters-4a37fa73c93c" target="_blank" rel="noopener">
+        <div class="post-card-thumb"><img src="/assets/img/size-matters.webp" alt="A small toy elephant figurine on a white background" loading="lazy"></div>
+        <div class="post-card-body">
+          <span class="post-card-title">Size Matters</span>
+          <span class="post-card-desc">The importance of sizing throughout the development lifecycle, a blog post for Lydtech Consulting.</span>
+        </div>
+      </a>
+      <a class="post-card" href="https://medium.com/lydtech-consulting/the-case-for-automated-testing-cd0aa91e1219" target="_blank" rel="noopener">
+        <div class="post-card-thumb"><img src="/assets/img/the-case-for-automated-testing.webp" alt="A lineup of five vintage tin toy robots of varying sizes" loading="lazy"></div>
+        <div class="post-card-body">
+          <span class="post-card-title">The Case for Automated Testing</span>
+          <span class="post-card-desc">Reflecting on key advantages and common pitfalls of automated testing, a blog post for Lydtech Consulting.</span>
+        </div>
+      </a>
+      <a class="post-card" href="https://medium.com/lydtech-consulting/preemptive-parallelism-1738493eb231" target="_blank" rel="noopener">
+        <div class="post-card-thumb"><img src="/assets/img/preemptive-parallelism.webp" alt="Multiple parallel railway tracks viewed from above" loading="lazy"></div>
+        <div class="post-card-body">
+          <span class="post-card-title">Preemptive Parallelism</span>
+          <span class="post-card-desc">Why you should bake parallelism into your E2E tests, a blog post for Lydtech Consulting.</span>
+        </div>
+      </a>
+      <a class="post-card" href="https://medium.com/lydtech-consulting/balancing-the-test-automation-pyramid-30cf9c8d8a3c" target="_blank" rel="noopener">
+        <div class="post-card-thumb"><img src="/assets/img/balancing-the-test-automation-pyramid.webp" alt="A line diagram of a testing pyramid divided into UI, Service, and Unit layers" loading="lazy"></div>
+        <div class="post-card-body">
+          <span class="post-card-title">Balancing the Test Automation Pyramid</span>
+          <span class="post-card-desc">Pragmatism and pyramids, a blog post for Lydtech Consulting.</span>
+        </div>
+      </a>
+    </div>
+  </section>
 
-  <h3>Projects</h3>
-  <ul>
-    <li><a href="http://www.dinosaursareawesome.co.uk">Dinosaurs are Awesome</a> - Spreading the good word.</li>
-    <li><a href="http://github.com/Matt-B/snackasaurus">Snackasaurus</a> - A CRUD recipe app written in Java using Play! framework.</li>
-    <li><a href="http://github.com/Matt-B/mpd-web-client">MPD Web Client</a> - A browser-based frontend for MPD, using express.js.</li>
-    <li><a href="http://github.com/Matt-B/api-comparison-tool">API Comparison Tool</a> - A script for diff-ing API responses, written using node.js.</li>
-    <li><a href="http://github.com/Matt-B/cucumber-js-selenium-webdriver-example">Cucumber-JS/Selenium-Webdriver Example</a> - A jumping off point for testers or developers getting started with functional acceptance tests in JavaScript.</li>
-    <li><a href="http://github.com/Matt-B/cli-6music-now-playing">CLI 6Music Now Playing</a> - An ASCII-based dashboard to show what's on the radio.</li>
-    <li><a href="http://github.com/Matt-B/teamcity-build-monitor">TeamCity Build Monitor</a> - A simple build monitor for TeamCity CI servers.</li>
-    <li><a href="http://github.com/Matt-B/mocha-webdriver-page-objects-example">Mocha/WebDriver Page Objects Example</a> - An attempt to use the page object model pattern in JavaScript with Mocha and WebDriver.</li>
-  </ul>
+  <section id="cv">
+    <div class="section-heading">
+      <h2>about me</h2>
+    </div>
+    <div class="about-body">
+      <p class="about-lead">I'm a software tester who's just as comfortable writing code as testing it.</p>
+      <p>With 15+ years' experience testing web applications across a wide range of technology stacks and industries, I help teams build quality in from the start — implementing testing at every level to deliver reliable products and strong user experiences, not just catching bugs at the end. I've built particular depth in API testing, payments systems, and observability tooling, areas where correctness and reliability really matter.</p>
+      <p>My toolkit includes TypeScript, Java, JavaScript, Python, and Kotlin, with test automation built on Playwright and Selenium. I'm equally comfortable working across AWS and GCP, including CI/CD pipeline and infrastructure testing, and having worked across Linux and Windows environments, I move fluidly between the command line and the desktop, adapting quickly to new stacks and tools.</p>
+      <p>I've worked with teams at every stage of agile maturity, from established agile squads to teams in transition, and I'm comfortable helping shape process as well as product.</p>
+      <p>I'm ISTQB-certified, a Certified ScrumMaster, and hold an MSc — the result of consistent self-study to stay current as the discipline evolves.</p>
+    </div>
+
+    <div class="section-heading section-heading--split" style="margin-top:clamp(56px,7vw,96px);">
+      <h2 id="experience">experience</h2>
+      <button type="button" class="pill" data-toggle-all>Expand all</button>
+    </div>
+    <div class="entries">
+
+      <div class="entry">
+        <div class="entry-date">February 2021–Present</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title">Director<span class="entry-at"> at </span><a href="https://www.finecitytesting.co.uk" target="_blank" rel="noopener">Fine City Testing</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>I work with clients from a variety of sectors to improve their software testing efforts.</p>
+              <h4>About Fine City Testing</h4>
+              <p class="about-para">Fine City Testing is a Norwich-based Software Development consultancy, specialising in software testing and test automation.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">December 2018–February 2021</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title">Senior Test Automation Engineer<span class="entry-at"> at </span><a href="https://www.velopayments.com" target="_blank" rel="noopener">Velo Payments</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>As a Test Automation Engineer, I work within Velo's engineering team to build reliable and scalable automation frameworks and tests to ensure we deliver a high quality product to customers..</p>
+              <h4>About Velo Payments</h4>
+              <p class="about-para">Velo reinvents treasury management services from a vertical, local solution delivered by banks, to a global service on a modern data platform that communicates with banks and non-banks anywhere in the world.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">July 2015–November 2018</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title">Software Engineer in Test<span class="entry-at"> at </span><a href="http://www.axonvibe.com" target="_blank" rel="noopener">Axon Vibe</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>As a Software Engineer in Test, I worked with the team to deliver high quality location based services across mobile platforms and backend servers.</p>
+              <h4>About Axon Vibe</h4>
+              <p class="about-para">Axon VIBE is a location-based contextual mobile app &amp; platform that detects and predicts human behaviour, and anticipates user needs.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">April 2012–July 2015</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title">Quality Analyst<span class="entry-at"> at </span><a href="http://www.7digital.com" target="_blank" rel="noopener">7digital</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>As a Quality Analyst, I worked with multiple teams, and was involved with both web-based front ends and internal and external APIs. For each team I was involved in requirements gathering, automated and manual testing at all stages of the development cycle, stakeholder liaison to ensure early and swift resolution of any issues and non-functional testing for areas such as security, load, and performance.</p>
+              <h4>About 7digital</h4>
+              <p class="about-para">7digital aims to simplify access to the world's music and radio. Their robust, scalable digital music platform and flexible APIs are used to power comprehensive music and radio services for leading consumer brands, mobile carriers, broadcasters, automotive systems, retailers, record labels, artists and agencies.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">April 2010–April 2012</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title">Test Analyst<span class="entry-at"> at </span><a href="http://www.polestarglobal.com" target="_blank" rel="noopener">Pole Star</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>As the sole Test Analyst in the 6-strong development team, I was responsible for all day-to-day aspects of testing, including preparing scenarios and scripts - both manual and automated, estimates for scheduling purposes, execution of tests, collating results and defects, reviewing bug reports, and providing feedback to the development team.</p>
+              <h4>About Pole Star Global</h4>
+              <p class="about-para">Pole Star Space Applications Limited is a privately owned UK company that has been providing tracking and monitoring services to the global maritime industry since 1998.</p>
+              <p class="about-para">From its headquarters in London, and via a network of offices located at key international maritime hubs, the company has earned a reputation as the principal provider of remote fleet management, ship security, Long Range Identification and Tracking (LRIT) and fisheries monitoring services.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">April 2008–April 2010</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title">Customer Support<span class="entry-at"> at </span><a href="http://www.polestarglobal.com" target="_blank" rel="noopener">Pole Star</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>As a member of the customer support team, I acted as the first point of contact for all support queries from customers and distributors. I offered software training to customers and distributors, identified hardware and software issues and escalated them accordingly, prepared reports and assisted with software testing when necessary.</p>
+              <h4>About Pole Star Global</h4>
+              <p class="about-para">Pole Star Space Applications Limited is a privately owned UK company that has been providing tracking and monitoring services to the global maritime industry since 1998.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">October 2006–March 2008</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title">Customer Care Co-ordinator<span class="entry-at"> at </span><a href="http://www.easycar.com" target="_blank" rel="noopener">easyCar</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>Working as a Customer Care Co-ordinator, I was responsible for management and maintenance of the company CRM system, supervision and training of an outsourced call centre, dealing with escalated queries and issues, updating terms and conditions and working with other departments across the company in order to resolve customer queries.</p>
+              <h4>About easyCar</h4>
+              <p class="about-para">easyCar.com, the low cost, online car hire specialist, is one of the leading international car rental brokers with a worldwide network of more than 3,500 car hire locations in over 60 countries.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-heading" style="margin-top:clamp(56px,7vw,96px);">
+      <h2 id="education">education</h2>
+    </div>
+    <div class="entries">
+
+      <div class="entry">
+        <div class="entry-date">January 2023</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title"><a href="https://certified.elastic.co/5dc75c58-8452-4698-82e4-8aa482ccc619" target="_blank" rel="noopener">Elastic Certified Analyst</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>In January 2023, I successfully completed the Elastic Certified Analyst course and examination.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">July 2022</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title"><a href="https://www.credential.net/2bbc55c7-161f-4201-a3b6-14605f78a4c4" target="_blank" rel="noopener">Elastic Certified Observability Engineer</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>In July 2022, I successfully completed the Elastic Certified Observability Engineer course and examination.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">September 2017</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title"><a href="https://www.scrumalliance.org/certifications/practitioners/certified-scrummaster-csm" target="_blank" rel="noopener">Certified ScrumMaster</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>In September 2017, I successfully completed the Certified ScrumMaster certification course.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">November 2014</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title"><a href="http://www.open.ac.uk" target="_blank" rel="noopener">The Open University</a></span>
+            <span class="entry-subtitle">MSc Software Development</span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>In November 2014 I was awarded an MSc in Software Development by the Open University. As part of this qualification, I was required to undertake a year-long research project and produce a dissertation. My dissertation concerned the application of risk-based testing concept to acceptance testing in agile projects.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">June 2013</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title"><a href="http://www.open.ac.uk" target="_blank" rel="noopener">The Open University</a></span>
+            <span class="entry-subtitle">Postgraduate Diploma in Software Development</span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>As part of my studies towards an MSc, I was awarded a Postgraduate Diploma in Software Development by the Open University.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">March 2011</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title"><a href="https://www.istqb.org/certifications/certified-tester-foundation-level" target="_blank" rel="noopener">ISTQB Foundation Certificate in Software Testing</a></span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>Whilst working at Pole Star, I achieved the foundation level ISTQB Software Testing certificate.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-date">June 2006</div>
+        <div class="entry-main">
+          <div class="entry-title-row">
+            <span class="entry-title"><a href="http://www.keele.ac.uk" target="_blank" rel="noopener">Keele University</a></span>
+            <span class="entry-subtitle">BA (Hons.) French + Politics</span>
+          </div>
+          <details class="entry-details">
+            <summary><span class="entry-toggle-marker when-closed">+</span><span class="entry-toggle-marker when-open">–</span><span class="when-closed">More info</span><span class="when-open">Close</span></summary>
+            <div class="entry-panel">
+              <p>Dual honours bachelor's degree in French and Politics from Keele University in Staffordshire.</p>
+              <p>Second class honours (lower division).</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-say">
+      <span class="footer-headline">say hello.</span>
+      <div class="footer-icons">
+        <a class="footer-icon" href="https://bsky.app/profile/matt-bailey.co.uk" target="_blank" rel="noopener" aria-label="Bluesky" title="Bluesky"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 10.8C10.94 8.74 8.06 4.9 5.38 3.02 2.81 1.22 1.83 1.53 1.19 1.82.45 2.16.31 3.29.31 3.96s.37 5.49.61 6.29c.8 2.65 3.61 3.55 6.2 3.26.13-.02.27-.04.4-.05-.13.02-.27.04-.4.05-3.79.56-7.16 1.94-2.74 6.85 4.86 5.03 6.66-1.08 7.58-4.17.92 3.1 1.99 9.02 7.5 4.17 4.14-4.17 1.14-6.29-2.65-6.85a8.5 8.5 0 0 1-.4-.05c.13.02.27.03.4.05 2.59.29 5.4-.61 6.2-3.26.24-.8.61-5.62.61-6.29 0-.67-.14-1.8-.88-2.14-.64-.29-1.62-.6-4.19 1.2C20.06 4.9 17.06 8.74 16 10.8"/></svg></a>
+        <a class="footer-icon" href="http://github.com/Matt-B" target="_blank" rel="noopener" aria-label="Github" title="Github"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-1.93c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.11-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12A11.5 11.5 0 0 0 12 .5"/></svg></a>
+        <a class="footer-icon" href="http://uk.linkedin.com/in/mattblankbailey/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5M3 9h4v12H3zM9.5 9h3.83v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21h-4z"/></svg></a>
+        <a class="footer-icon" href="https://medium.com/@matt-bailey" target="_blank" rel="noopener" aria-label="Medium" title="Medium"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.85 7.2a.86.86 0 0 0-.28-.72L.65 4.16V3.8h5.98l4.62 10.14L15.32 3.8h5.7v.36l-1.64 1.58a.48.48 0 0 0-.18.46v11.6a.48.48 0 0 0 .18.46l1.6 1.58v.36h-8.05v-.36l1.66-1.62c.16-.16.16-.21.16-.46V8.36l-4.62 11.7h-.62L4.13 8.36v7.84c-.04.34.07.68.31.92l2.16 2.62v.36H.5v-.36l2.16-2.62c.24-.24.35-.58.29-.92z"/></svg></a>
+      </div>
+    </div>
+    <p class="footer-copyright">© Matt Bailey</p>
+  </footer>
 </div>
+<script src="/js/main.js"></script>
+</body>
+</html>
